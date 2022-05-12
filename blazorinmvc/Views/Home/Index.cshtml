@@ -1,0 +1,7 @@
+﻿@using blazorinmvc.Views.Shared.Component
+@{
+     ViewData["Title"] = "Home Page";
+ }
+<div >
+@(await Html.RenderComponentAsync<Component>(RenderMode.Server,new {  Data= " Hello World " }))
+ </div> 
